@@ -1,10 +1,10 @@
-import Queue from './class/queue';
-
+// import { Queue } from './class.js'
+const allClass = require('./class.js');
+// console.log(Queue)
 // 击鼓传花游戏
-export function hotPotato(elementsList, num) {
-  const queue = new Queue();
+const hotPotato = (elementsList, num) => {
+  const queue = new allClass.Queue();
   const elimitatedList = [];
-
   for (let i = 0; i < elementsList.length; i++) {
     queue.enqueue(elementsList[i]);
   }
@@ -21,3 +21,10 @@ export function hotPotato(elementsList, num) {
     winner: queue.dequeue()
   };
 }
+
+module.exports = {
+    hotPotato
+}
+let obj = hotPotato(['1','2','3'], 11)
+console.log(obj.eliminated)
+console.log(obj.winner)

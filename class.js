@@ -231,7 +231,7 @@ const Stack = class Stack {
     }
   }
 
-  export {
+  module.exports = {
     Stack,
     StackArray,
     Queue,
