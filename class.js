@@ -1,5 +1,5 @@
 const { Compare, defaultCompare, defaultEquals } = require('./util');
-console.log(defaultEquals)
+
 // 栈类对象
 const Stack = class Stack {
     constructor() {
@@ -626,5 +626,6 @@ const Stack = class Stack {
     LinkedList,
     DoublyLinkedList,
     CircularLinkedList,
-    StackLinkedList
+    StackLinkedList,
+    SortedLinkedList
   }
