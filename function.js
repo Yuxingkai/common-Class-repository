@@ -25,6 +25,21 @@ const hotPotato = (elementsList, num) => {
 module.exports = {
     hotPotato
 }
-let obj = hotPotato(['1','2','3'], 11)
-console.log(obj.eliminated)
-console.log(obj.winner)
+// let obj = hotPotato(['1','2','3'], 11)
+// console.log(obj.eliminated)
+// console.log(obj.winner)
+
+
+const DoublyLinkedList = new allClass.DoublyLinkedList();
+
+console.log(DoublyLinkedList)
+
+DoublyLinkedList.push({name: '是1', id: 1})
+DoublyLinkedList.push({name: '是2', id: 2})
+DoublyLinkedList.push({name: '是3', id: 3})
+
+// console.log(LinkedList.insert({name: '是4', id: 4}, 1))
+console.log('++++++')
+console.log(DoublyLinkedList)
+console.log('++++++')
+// console.log(LinkedList.getElementAt(1))
